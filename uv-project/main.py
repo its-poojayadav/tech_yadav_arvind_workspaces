@@ -1,6 +1,6 @@
-def main():
-    print("Hello from uv-project!")
+from dotenv import load_dotenv
+import os
+load_dotenv()
 
-
-if __name__ == "__main__":
-    main()
+print(os.getenv("MODEL"))
+print(os.getenv("MY_KEY"))
